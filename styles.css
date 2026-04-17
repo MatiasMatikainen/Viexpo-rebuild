@@ -294,23 +294,30 @@ body {
 
 @media (max-width: 1024px) {
 
+  .header .container {
+    padding: 15px 20px;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .menu-icon {
     display: flex;
+    margin-left: auto;
   }
 
   .nav {
     position: absolute;
     top: 70px;
-    left: 100;
+    left: 0;
     width: 100%;
     background: white;
     flex-direction: column;
     display: none;
     padding: 20px;
-  }
-
-  .nav a {
-    margin: 10px 0;
   }
 
   #menu-toggle:checked + .menu-icon + .nav {
