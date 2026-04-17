@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Source Sans 3', Arial, sans-serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -53,12 +53,12 @@ body {
 
 .hero-text .breadcrumb {
   font-size: 24px;
-  color: #1f3c88;
+  color: #012483;
 }
 
 .hero-text h1 {
   font-size: 42px;
-  color: #1f3c88;
+  color: #012483;
   margin: 0px;
 }
 
@@ -71,7 +71,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 22px;
-  background: #1f3c88;
+  background: #012483;
   color: white;
   text-decoration: none;
   border-radius: 999px;
@@ -115,9 +115,9 @@ body {
 
 .content h3 {
   font-size: 28px;
-  color: #1f3c88;
-  margin-bottom: 20px;
+  color: #012483;
   text-align: left;
+  font-weight: normal;
 }
 
 .text-block {
@@ -130,7 +130,7 @@ body {
 }
 
 .footer {
-  background: #0d2f7a;
+  background: #012483;
   color: white;
   padding: 60px 40px 20px;
   position: relative;
@@ -199,7 +199,7 @@ body {
   width: 100%;
   padding: 12px;
   border: none;
-  background: #1f3c88;
+  background: #012483;
   color: white;
   border-radius: 25px;
   cursor: pointer;
@@ -209,4 +209,41 @@ body {
   text-align: center;
   margin-top: 100px;
   font-size: 16px;
+}
+
+@media (max-width: 900px) {
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1; 
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-middle {
+    display: block;
+  }
+
+  .footer-form {
+    width: 100%;
+  }
 }
