@@ -417,7 +417,7 @@
 
             <div class="field">
               <label>Kirjoita puhelinnumerosi, jos haluat meidän soittavan sinulle.</label>
-              <input type="text" placeholder="+358" />
+              <input type="text"/>
             </div>
           </div>
 
@@ -433,15 +433,63 @@
             <textarea></textarea>
           </div>
 
-          <label class="checkbox">
-            <input type="checkbox"/>Haluan tilata Viexpon uutiskirjeen</input>
-          </label>
+            <div class="checkbox">
+              <label for="test">Haluan tilata Viexpon uutiskirjeen</label>
+              <input type="checkbox" name="test" id="test" />
+            </div>
           <button type="submit" class="submit-btn">Lähetä</button>
       </form>
     </div>
 
   </div>
 </section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <img src="images/logo.jpg">
+      <p class="tagline">AVAAMME UUSIA MARKKINOITA</p>
+
+    </div>
+
+    <div class="footer-middle">
+
+      <div class="column">
+        <p>Pietarsaari<br>Runeberginkatu 11<br>68600 Pietarsaari</p>
+        <p>Seinäjoki<br>Alvar Aallon katu 3<br>60100 Seinäjoki</p>
+        <p>Vaasa<br>Wolffintie 35 B, 5. krs.<br>65200 Vaasa</p>
+      </div>
+
+      <div class="column">
+        <p>Kokkola<br>Pitkänsillankatu 1-3 D, 2. krs<br>67100 Kokkola</p>
+        <p>Kurikka<br>Keskuspuistikko 14<br>61300 Kurikka</p>
+        <p class="link">Kaikki yhteystiedot &nbsp;<span style='font-size:20px;'>&#8599;</span></p>
+      </div>
+
+    </div>
+
+    <div class="footer-form">
+      <h3>Haluan tilata Viexpon uutiskirjeen ja liittyä postituslistalle.</h3>
+
+      <label for="fname">Etunimi</label>
+      <input type="text">
+      <label for="lname">Sukunimi</label>
+      <input type="text">
+      <label for="email">Sähköposti</label>
+      <input type="email">
+
+      <button>Lähetä</button>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Tietosuojaseloste &nbsp; Saavutettavuusseloste &nbsp; Verkkosivut: WebAula &nbsp; © Viexpo 2026</p>
+  </div>
+
+</footer>
 
 </body>
 </html>
