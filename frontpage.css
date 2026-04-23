@@ -704,7 +704,99 @@ body {
   border: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+
+  .header .container {
+    padding: 15px 40px;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header {
+  position: relative;
+  z-index: 10;
+  }
+
+  .home-hero h1 {
+    line-height: 1.0;
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .contact-form {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 2fr; 
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .ref-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .references-container h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .numbers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-left h2 {
+    font-size: 45px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-form {
+    width: 100%;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;          
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 6px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
   /* Runko */
   .container {
   width: 100%;
@@ -848,38 +940,4 @@ body {
   .footer-form {
     width: 100%;
   }
-}
-
-@media (max-width: 1024px) {
-
-  .header .container {
-    padding: 15px 20px;
-  }
-
-  .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu-icon {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .nav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    display: none;
-    padding: 20px;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav {
-    display: flex;
-  }
-
 }
